@@ -1,0 +1,5 @@
+.idea/*
+tmp/*
+main
+go.sum
+swagger.json
