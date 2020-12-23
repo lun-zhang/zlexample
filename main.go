@@ -86,9 +86,7 @@ func main() {
 	bindRouter(router)
 
 	//服务启动
-	err := router.Run(addr)
-	//srv := endless.NewServer(address, router)//endless能优雅重启，但只有*nix上才能用
-	//err := srv.ListenAndServe()
+	err := run(router)
 	logrus.Infof("shutdown %v", err)
 }
 
